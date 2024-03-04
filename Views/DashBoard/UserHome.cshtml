@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UserHome</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Hariti Study Hub</h1>
+        <h3 class="mt-4"><font color="RED">Login and Logout Facility Using Session in Asp.Net MVC</font></h3>
+        <div class="mt-5">
+            <p>Hello @Session["username"].ToString()</p>
+
+            <div class="alert alert-primary" role="alert">
+                Welcome to Our Website, You can explore 400 Video tutorials to learn Asp.Net With C#
+            </div>
+
+            <form action="/DashBoard/UserHome" method="post">
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (including jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
